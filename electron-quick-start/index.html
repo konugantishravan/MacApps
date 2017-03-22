@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+     <link rel="stylesheet" href="css/photon.min.css">
+    <link href="Common/Common.css" rel="stylesheet"/>
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.1.223/js/kendo.all.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
+
+    <script src="SideBar/SideBar.js">
+    </script>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+  This is my First MAC App usign Electron.Awesome :-)
+ <div class="window">
+   <div class="window-content">
+    <div class="pane-group">
+       <div class="pane-sm sidebar">
+         <div id ="listView"></div>
+       </div>
+      <div class="pane">Main</div>
+    </div>
+  </div>
+   </div>
+  </body>
+
+  <script>
+
+    require('./renderer.js')
+  </script>
+</html>
